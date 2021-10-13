@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ConsultaAgenda_AD</string>
+    <string name="txVw_Result" />
+    <string name="hint_phone">Introduce the phone number</string>
+    <string name="bt_Search">Search</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Read Contact Permissions Required</string>
+    <string name="message">Rationale Explain</string>
+</resources>
