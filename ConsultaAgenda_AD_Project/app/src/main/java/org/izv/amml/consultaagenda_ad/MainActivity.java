@@ -131,10 +131,16 @@ public class MainActivity extends AppCompatActivity {
             name = cursor.getString(columnName);
             num = cursor.getString(columnNum);
             num = num.replaceAll("[^0-9]", "");
-            if (num.equals(etPhone.getText().toString())){
-                Log.v(TAG, name + ": " + num);
-                tvResult.setText(name);
+            if(!etPhone.getText().toString().isEmpty()){
+                if (num.equals(etPhone.getText().toString())){
+                    Log.v(TAG, name + ": " + num);
+                    tvResult.setText(name);
+                }
+            } else{
+                Log.v(TAG, "No se ha introducido ningún número");
+                tvResult.setText("No se ha introducido ningún número");
             }
+
         }
     }
 
